@@ -63,7 +63,7 @@ const ChatInterface: React.FC = () => {
     setIsTyping(true);
 
     try {
-      const response = await fetch('http://localhost:8080/query-agent', {
+      const response = await fetch('https://aimpact-backend-653465286381.us-central1.run.app/query-agent', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
