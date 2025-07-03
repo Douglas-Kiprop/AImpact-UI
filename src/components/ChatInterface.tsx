@@ -63,7 +63,7 @@ const ChatInterface: React.FC = () => {
     setIsTyping(true);
 
     try {
-      const response = await fetch('https://aimpact-backend-653465286381.us-central1.run.app/query-agent', {
+      const response = await fetch(import.meta.env.VITE_BACKEND_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
